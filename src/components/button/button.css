@@ -1,0 +1,88 @@
+.white {
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+
+width: 252.33px;
+height: 40px;
+
+/* Ink/00 White */
+
+background: #FFFFFF;
+/* UI/Action */
+
+border: 1px solid #5A45F2;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.black{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+
+width: 204.33px;
+height: 40px;
+
+/* Ink/05 Black */
+color: white;
+background: #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.blue{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+
+width: 188.33px;
+height: 40px;
+
+/* UI/Action */
+color: white;
+background: #5A45F2;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+}

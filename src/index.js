@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components/button/button.css";
+import "./components/block/block.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

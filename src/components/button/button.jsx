@@ -4,7 +4,7 @@ import "./button.css";
 const data = {
   white: {
     content: "Get Started",
-    style: "white",
+    style: "whitebutton",
   },
   black: {
     content: "Become a Pro",
@@ -12,7 +12,7 @@ const data = {
   },
   blue: {
     content: "Get Teams",
-    style: "blue",
+    style: "bluebutton",
   },
 };
 

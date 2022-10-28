@@ -1,0 +1,118 @@
+.white {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+
+  width: 284.33px;
+  height: 524px;
+
+  /* Ink/00 White */
+
+  background: #ffffff;
+  /* Ink/02 */
+
+  border: 2px solid #dae9ef;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.blue {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 16px;
+
+  width: 284.33px;
+  height: 524px;
+
+  /* UI/Action */
+
+  background: #5a45f2;
+  /* Ink/05 Black */
+
+  border: 2px solid #000000;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.blockAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textPrimaryblue {
+  color: white;
+  font-size: small;
+}
+
+.textPrimarywhite {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.textSecundaryblue {
+  color: white;
+  font-size: small;
+}
+.textSecundarywhite {
+  color: black;
+  font-size: small;
+}
+
+.textGrey {
+  color: white;
+  font-size: 12px;
+}
+
+img {
+  width: 252.33px;
+  height: 80px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.list {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.noValidTextBlue {
+  color: grey;
+}
+
+.validTextBlue {
+  color: black;
+}
+
+.whiteTextInBlue {
+  color: white;
+}

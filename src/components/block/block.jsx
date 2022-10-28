@@ -1,39 +1,77 @@
-import React from 'react';
-
+import React from "react";
+import "./block.css";
+import Button from "../button/button";
+import image1 from "../../img/image1.png";
+import image2 from "../../img/image2.png";
+import image3 from "../../img/image3.png";
+import image4 from "../../img/image4.png";
+import image5 from "../../img/image5.png";
+import Vector from "../../img/Vector.png";
 
 const dataBlock = {
-  list : [
+  list: [
     "Full courses library",
     "A new daily meditation",
     "Access to the meditation guru",
     "Sleep podcasts and exercices",
     "Mindfulness exercices",
     "Guided meditations",
-    "Cooking recipes"
-],
+    "Cooking recipes",
+  ],
 
-Starter : {
-  price: "Free",
-  checks: 3,
-},
+  Starter: {
+    img: "image2",
+    price: "Free",
+    checks: 3,
+    typeButton: "white",
+  },
 
-Pro : {
-  price: "49",
-  checks: 5
-},
+  Pro: {
+    img: "image1",
+    price: "49",
+    checks: 5,
+    typeButton: "black",
+  },
 
-Teams : {
-  price: "99",
-  checks : 7,
-}
-}
+  Teams: {
+    img: "image3",
+    price: "99",
+    checks: 7,
+    typeButton: "blue",
+  },
+};
 
-const block = () => {
+const Block = ({ type = "Pro", style = "blue" }) => {
+  const blockStyle = dataBlock[type];
+  console.log(blockStyle);
+
   return (
-    <div className='block-container'>
-
+    <div className={style}>
+      
+      <img src={image4} alt="img" />
+      <div className="blockAlign">
+        <div className={`textSecundary${style}`}>{type}</div>
+        <div className={`textPrimary${style}`}>{blockStyle.price}</div>
+        <div className="textGrey">per month</div>
+      </div>
+      <div className="list">
+        {dataBlock.list.map((x, index) => {
+          if (style === "blue") {
+            console.log(index);
+            if (blockStyle.checks <= index) {
+              return <div className={"noValidTextBlue"}>{x}</div>;
+            }
+            return <div className="whiteTextInBlue">{x}</div>;
+          }
+          if (blockStyle.checks > index) {
+            return <div className={"validTextBlue"}>{x}</div>;
+          }
+          return <div className={"noValidTextBlue"}>{x}</div>;
+        })}
+      </div>
+      <Button type={blockStyle.typeButton} />
     </div>
-  )
-}
+  );
+};
 
-export default block
+export default Block;

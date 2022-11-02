@@ -20,7 +20,7 @@ const dataBlock = {
   ],
 
   Starter: {
-    img: "image2",
+    img: "image4",
     price: "Free",
     checks: 3,
     typeButton: "white",
@@ -47,26 +47,25 @@ const Block = ({ type = "Pro", style = "blue" }) => {
 
   return (
     <div className={style}>
-      
       <img src={image4} alt="img" />
       <div className="blockAlign">
         <div className={`textSecundary${style}`}>{type}</div>
         <div className={`textPrimary${style}`}>{blockStyle.price}</div>
-        <div className="textGrey">per month</div>
+        <div className={`textGrey${style}`}>per month</div>
       </div>
       <div className="list">
-        {dataBlock.list.map((x, index) => {
+        {dataBlock.list.map((text, index) => {
           if (style === "blue") {
             console.log(index);
             if (blockStyle.checks <= index) {
-              return <div className={"noValidTextBlue"}>{x}</div>;
+              return <div className={"noValidTextBlue"}>- {text}</div>;
             }
-            return <div className="whiteTextInBlue">{x}</div>;
+            return <div className="whiteTextInBlue">- {text}</div>;
           }
           if (blockStyle.checks > index) {
-            return <div className={"validTextBlue"}>{x}</div>;
+            return <div className={"validTextBlue"}>- {text}</div>;
           }
-          return <div className={"noValidTextBlue"}>{x}</div>;
+          return <div className={"noValidTextWhite"}>- {text}</div>;
         })}
       </div>
       <Button type={blockStyle.typeButton} />

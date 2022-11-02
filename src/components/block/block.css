@@ -5,7 +5,7 @@
 
   margin: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
@@ -24,9 +24,9 @@
 
   /* Inside auto layout */
 
-  flex: none;
+  flex: 0;
   order: 0;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .blue {
@@ -35,13 +35,14 @@
   /* Auto layout */
 
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px;
+  padding: 16px;
   gap: 16px;
 
   width: 284.33px;
-  height: 524px;
+  height: 564px;
 
   /* UI/Action */
 
@@ -54,8 +55,8 @@
   /* Inside auto layout */
 
   flex: none;
-  order: 1;
-  flex-grow: 1;
+  order: 0;
+  flex-grow: 0;
 }
 
 .blockAlign {
@@ -83,13 +84,18 @@
   font-size: small;
 }
 
-.textGrey {
+.textGreyblue {
   color: white;
+  font-size: 12px;
+}
+.textGreywhite {
+  color: rgba(164, 164, 164, 0.575);
   font-size: 12px;
 }
 
 img {
   width: 252.33px;
+  margin-top: 1px;
   height: 80px;
 
   /* Inside auto layout */
@@ -102,17 +108,27 @@ img {
 
 .list {
   text-align: left;
-  margin-left: 40px;
+  margin-left: 10px;
+  display: grid;
+  row-gap: 20px;
 }
 
 .noValidTextBlue {
   color: grey;
+  font-size: 14px;
 }
 
 .validTextBlue {
   color: black;
+  font-size: 14px;
 }
 
 .whiteTextInBlue {
   color: white;
+  font-size: 14px;
+}
+
+.noValidTextWhite {
+  color: rgba(164, 164, 164, 0.575);
+  font-size: 14px;
 }

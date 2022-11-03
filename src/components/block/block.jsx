@@ -46,8 +46,13 @@ const Block = ({ type = "Pro", style = "blue" }) => {
   console.log(blockStyle);
 
   return (
+    
     <div className={style}>
-      <img src={image4} alt="img" />
+
+      <div className={`img${type}`}>{blockStyle.img}
+        {/* <img src={image4} alt="img" /> */}
+      </div>
+
       <div className="blockAlign">
         <div className={`textSecundary${style}`}>{type}</div>
         <div className={`textPrimary${style}`}>{blockStyle.price}</div>

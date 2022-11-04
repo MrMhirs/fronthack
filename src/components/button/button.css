@@ -25,8 +25,16 @@
 
   flex: none;
   order: 3;
-  align-self: stretch;
+  align-self: center;
   flex-grow: 0;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.whitebutton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
 }
 
 .black {
@@ -53,9 +61,11 @@
 
   flex: none;
   order: 3;
-  align-self: stretch;
+  align-self: center;
   flex-grow: 0;
 }
+
+
 
 .bluebutton {
   /* Button */
@@ -81,6 +91,6 @@
 
   flex: none;
   order: 3;
-  align-self: stretch;
+  align-self: center;
   flex-grow: 0;
 }

@@ -16,11 +16,15 @@ const data = {
   },
 };
 
-const Button = ({type = "white"}) => {
+const Button = ({ type = "white", onclick }) => {
   const buttonStyle = data[type];
   console.log(type);
 
-  return <div className={buttonStyle.style}>{buttonStyle.content}</div>;
+  return (
+    <button onClick={onclick} className={buttonStyle.style}>
+      {buttonStyle.content}
+    </button>
+  );
 };
 
 export default Button;

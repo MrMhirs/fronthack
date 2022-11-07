@@ -1,34 +1,23 @@
 import React from "react";
-import styles from "./modal.css";
 import { RiCloseLine } from "react-icons/ri";
 
-
-
-const Modal = ({ setIsOpen }) => {
+const Modal = ({ setIsOpen, children }) => {
   return (
     <>
-      <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
-      <div className={styles.centered}>
-        <div className={styles.modal}>
-          <div className={styles.modalHeader}>
-            <h5 className={styles.heading}>Dialog</h5>
+      <div className="darkBG" onClick={() => setIsOpen(false)} />
+      <div className="centered">
+        <div className="modal">
+          <div className="modalHeader">
+            <h5 className="heading">Contact Us</h5>
           </div>
-          <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
+          <button className="closeBtn" onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
-          <div className={styles.modalContent}>
-            Are you sure you want to delete the item?
-          </div>
-          <div className={styles.modalActions}>
-            <div className={styles.actionsContainer}>
-              <button className={styles.deleteBtn} onClick={() => setIsOpen(false)}>
-                Delete
-              </button>
-              <button
-                className={styles.cancelBtn}
-                onClick={() => setIsOpen(false)}
-              >
-                Cancel
+          <div className="div1">{children}</div>
+          <div className="modalActions">
+            <div className="actionsContainer">
+              <button className="sendBtn" onClick={() => setIsOpen(false)}>
+                Send
               </button>
             </div>
           </div>

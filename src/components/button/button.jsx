@@ -1,6 +1,7 @@
 import React from "react";
 import "./button.css";
 
+
 const data = {
   white: {
     content: "Get Started",
@@ -8,7 +9,7 @@ const data = {
   },
   black: {
     content: "Become a Pro",
-    style: "black",
+    style: "blackbutton",
   },
   blue: {
     content: "Get Teams",

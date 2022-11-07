@@ -37,7 +37,7 @@
   box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
 }
 
-.black {
+.blackbutton {
   /* Button */
 
   /* Auto layout */
@@ -63,8 +63,14 @@
   order: 3;
   align-self: center;
   flex-grow: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
+.blackbutton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(223, 226, 234, 0.6);
+}
 
 
 .bluebutton {
@@ -93,4 +99,11 @@
   order: 3;
   align-self: center;
   flex-grow: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.bluebutton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
 }

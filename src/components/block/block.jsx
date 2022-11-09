@@ -50,7 +50,6 @@ const Block = ({ type = "Pro", style = "blue", onclick }) => {
     <div className={style}>
       <img src={blockStyle.img} />
 
-      {/* <div className={`img${type}`}>{blockStyle.img}</div> */}
 
       <div className="blockAlign">
         <div className={`textSecundary${style}`}>{type}</div>

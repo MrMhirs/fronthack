@@ -4,7 +4,6 @@ import Button from "../button/button";
 import image1 from "../../img/image1.png";
 import image3 from "../../img/image3.png";
 import image4 from "../../img/image4.png";
-import Vector from "../../img/Vector.png";
 
 
 const dataBlock = {

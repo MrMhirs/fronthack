@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Block from "./components/block/block";
 import Modal from "./components/modal/modal";
+
 
 
 function App() {
@@ -18,9 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <Block type="Starter" style={white} onclick={onclick} />
-      <Block type="Pro" style={blue} onclick={onclick} />
-      <Block type="Teams" style={white} onclick={onclick} />
+      <Block type="Starter" style="white" onclick={onclick} />
+      <Block type="Pro" style="blue" onclick={onclick} />
+      <Block type="Teams" style="white" onclick={onclick} />
 
       {isOpen && (
         <Modal close={setIsOpen} send={inclick} btn={modalOpen ? false : true}>

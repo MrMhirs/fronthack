@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./block.css";
 import Button from "../button/button";
 import image1 from "../../img/image1.png";
-import image2 from "../../img/image2.png";
 import image3 from "../../img/image3.png";
 import image4 from "../../img/image4.png";
-import image5 from "../../img/image5.png";
 import Vector from "../../img/Vector.png";
 
 
@@ -48,7 +46,7 @@ const Block = ({ type = "Pro", style = "blue", onclick }) => {
 
   return (
     <div className={style}>
-      <img src={blockStyle.img} />
+      <img src={blockStyle.img} alt="img" />
 
 
       <div className="blockAlign">

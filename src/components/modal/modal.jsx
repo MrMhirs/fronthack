@@ -1,7 +1,12 @@
 import React from "react";
 import { RiCloseLine } from "react-icons/ri";
+import { useState } from "react";
 
-const Modal = ({ close, children, send }) => {
+const reload = () => window.location.reload();
+
+const Modal = ({ close, children, send, btn = true }) => {
+  const [open, setOpen] = useState(true);
+
   return (
     <>
       <div className="darkBG" onClick={() => close(false)} />
@@ -16,9 +21,11 @@ const Modal = ({ close, children, send }) => {
           <div className="div1">{children}</div>
           <div className="modalActions">
             <div className="actionsContainer">
-              <button className="sendBtn" onClick={() => send()}>
-                Send
-              </button>
+              {btn ? (
+                <button className="sendBtn" onClick={() => send()}>
+                  Send
+                </button>
+              ) : null}
             </div>
           </div>
         </div>

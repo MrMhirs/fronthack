@@ -2,10 +2,10 @@ import React from "react";
 import { RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
 
-const reload = () => window.location.reload();
+
 
 const Modal = ({ close, children, send, btn = true }) => {
-  const [open, setOpen] = useState(true);
+
 
   return (
     <>

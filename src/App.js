@@ -3,6 +3,7 @@ import "./App.css";
 import Block from "./components/block/block";
 import Modal from "./components/modal/modal";
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
